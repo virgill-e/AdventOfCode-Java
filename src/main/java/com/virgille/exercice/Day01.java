@@ -5,10 +5,15 @@ import com.virgille.Solution;
 import java.util.List;
 
 public class Day01 implements Solution {
+
+    //constante
+    private static final int DIAL_INIT = 50;
+
+
     @Override
     public String part1(List<String> input) {
         int password = 0;
-        int dial = 50;
+        int dial = DIAL_INIT;
         for(String line : input) {
             if(line.charAt(0) == 'R'){
                 dial += Integer.parseInt(line.substring(1));
@@ -49,6 +54,7 @@ public class Day01 implements Solution {
                     }
                     dial = ((dial % 100) + 100) % 100;
                 }
+
             } else if(line.charAt(0) == 'L'){
                 dial -= numberOfSpin;
                 if(dial < 0 && dial != 0){
@@ -58,6 +64,7 @@ public class Day01 implements Solution {
                     dial = ((dial % 100) + 100) % 100;
                 }
             }
+
             if(dial == 0 || dial == 100){
                 password++;
             }

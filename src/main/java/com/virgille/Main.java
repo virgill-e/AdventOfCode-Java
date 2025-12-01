@@ -8,7 +8,7 @@ import com.virgille.utils.InputParser;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    static void main() {
         for (int day = 1; day <= 25; day++) {
             String dayClassName = String.format("com.virgille.exercice.Day%02d", day);
             String inputPath = String.format("src/main/resources/day%02d.txt", day);
