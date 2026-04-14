@@ -38,18 +38,25 @@ public class Day02 implements Solution {
                 String id=String.valueOf(i);
                 int lengthId=id.length();
 
-                for(int j=1;j<=lengthId/2;j++){
-                    String val=id.substring(0,j);
-                    if(List.of(id.split(val)).stream().distinct().count() <= 1){
-                        answer+=Long.valueOf(id);
+                for (int j = 1; j <= lengthId / 2; j++) {
+                    if (lengthId % j == 0 && isRepeating(id, j)) {
+                        answer += i;
                         break;
                     }
                 }
-
-
             }
 
         }
         return String.valueOf(answer);
     }
+
+    private boolean isRepeating(String id, int prefixLen) {
+        String prefix = id.substring(0, prefixLen);
+        int len = id.length();
+        for (int i = prefixLen; i < len; i++) {
+            if (id.charAt(i) != prefix.charAt(i % prefixLen)) return false;
+        }
+        return true;
+    }
 }
+
