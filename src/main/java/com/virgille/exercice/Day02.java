@@ -19,7 +19,6 @@ public class Day02 implements Solution {
                 if(id.substring(0,lengthId/2).equals(id.substring(lengthId/2, lengthId))){
                     String part1=id.substring(0,lengthId/2);
                     String part2= id.substring(lengthId/2, lengthId);
-                    //System.out.println(part1 + " "+ part2);
                     answer+=Long.valueOf(id);
                 }
             }
@@ -30,6 +29,27 @@ public class Day02 implements Solution {
 
     @Override
     public String part2(List<String> input) {
-        return "";
+        long answer=0;
+        input = List.of(input.get(0).split(","));
+        for(String line : input){
+            long start=Long.valueOf(line.split("-")[0]);
+            long end=Long.valueOf(line.split("-")[1]);
+            for(long i=start;i<=end;i++){
+                String id=String.valueOf(i);
+                int lengthId=id.length();
+
+                for(int j=1;j<=lengthId/2;j++){
+                    String val=id.substring(0,j);
+                    if(List.of(id.split(val)).stream().distinct().count() <= 1){
+                        answer+=Long.valueOf(id);
+                        break;
+                    }
+                }
+
+
+            }
+
+        }
+        return String.valueOf(answer);
     }
 }

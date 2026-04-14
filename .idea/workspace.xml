@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2e6e16-710c-4027-8da3-b26122a28daf" name="Changes" comment="Structure adventOfCode">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/virgille/exercice/Day02.java" afterDir="false" />
+    <list default="true" id="8c2e6e16-710c-4027-8da3-b26122a28daf" name="Changes" comment="day2 part1 2025">
+      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/virgille/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/virgille/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/virgille/exercice/Day02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/virgille/exercice/Day02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758999613248</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="day2 part1 2025">
+      <option name="closed" value="true" />
+      <created>1776092557269</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776092557269</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +154,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Structure adventOfCode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Structure adventOfCode" />
+    <MESSAGE value="day2 part1 2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="day2 part1 2025" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
