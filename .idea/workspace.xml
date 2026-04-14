@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2e6e16-710c-4027-8da3-b26122a28daf" name="Changes" comment="day2 part2 2025">
+    <list default="true" id="8c2e6e16-710c-4027-8da3-b26122a28daf" name="Changes" comment="day2 part2 2025 update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/virgille/exercice/Day03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/virgille/exercice/Day02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/virgille/exercice/Day02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776156075803</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="day2 part2 2025 update">
+      <option name="closed" value="true" />
+      <created>1776156818113</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776156818113</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +170,8 @@
     <MESSAGE value="Structure adventOfCode" />
     <MESSAGE value="day2 part1 2025" />
     <MESSAGE value="day2 part2 2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="day2 part2 2025" />
+    <MESSAGE value="day2 part2 2025 update" />
+    <option name="LAST_COMMIT_MESSAGE" value="day2 part2 2025 update" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
