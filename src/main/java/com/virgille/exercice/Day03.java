@@ -31,6 +31,33 @@ public class Day03 implements Solution {
 
     @Override
     public String part2(List<String> input) {
-        return "";
+        long answer=0;
+        for (String line : input) {
+            String voltage = "";
+            int startIdx = 0;
+
+                int currentPos = startIdx;
+                while (voltage.length() < 12 && currentPos < line.length()) {
+                    int bestDigit = -1;
+                    int bestPos = -1;
+                    int remainingNeeded = 12 - voltage.length() - 1;
+                    for (int i = currentPos; i <= line.length() - 1 - remainingNeeded; i++) {
+                        int digit = Character.getNumericValue(line.charAt(i));
+                        if (digit > bestDigit) {
+                            bestDigit = digit;
+                            bestPos = i;
+                            if (digit == 9) break;
+                        }
+                    }
+                    if (bestPos != -1) {
+                        voltage+=bestDigit;
+                        currentPos = bestPos + 1;
+                    } else {
+                        break;
+                    }
+                }
+            answer += Long.valueOf(voltage);
+            }
+        return String.valueOf(answer);
     }
 }
