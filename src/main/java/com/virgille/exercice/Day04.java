@@ -40,7 +40,6 @@ public class Day04 implements Solution {
 
     @Override
     public String part2(List<String> input) {
-        //meme logique que le 1 mais on itere plusieur fois le résultat en rempalçant les @ qui n'ont pas 4 voisins par un . et compté le nombre de remplacement a chaque itération pour la réponse
         int[][] directions = {
                 {-1, -1}, {-1, 0}, {-1, 1},
                 {0, -1},           {0, 1},
@@ -70,7 +69,6 @@ public class Day04 implements Solution {
                     if(nbNeighboor<4){
                         answer++;
                         hasRemove=true;
-                        //remplacer le caractère de nextinput X,y par un '.'
                         char[] chars = nextInput.get(y).toCharArray();
                         chars[x] = '.';
                         nextInput.set(y, String.valueOf(chars));
@@ -79,8 +77,6 @@ public class Day04 implements Solution {
             }
             input = new ArrayList<>(nextInput);
         }
-
-
         return String.valueOf(answer);
     }
 }
