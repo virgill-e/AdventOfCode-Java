@@ -2,6 +2,7 @@ package com.virgille.exercice;
 
 import com.virgille.Solution;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Day04 implements Solution {
@@ -39,6 +40,47 @@ public class Day04 implements Solution {
 
     @Override
     public String part2(List<String> input) {
-        return "";
+        //meme logique que le 1 mais on itere plusieur fois le résultat en rempalçant les @ qui n'ont pas 4 voisins par un . et compté le nombre de remplacement a chaque itération pour la réponse
+        int[][] directions = {
+                {-1, -1}, {-1, 0}, {-1, 1},
+                {0, -1},           {0, 1},
+                {1, -1},  {1, 0},  {1, 1}
+        };
+        int answer=0;
+        boolean hasRemove=true;
+        while (hasRemove){
+            List<String> nextInput=new ArrayList<>(input);
+            hasRemove=false;
+            for(int y=0;y<input.size();y++){
+                for(int x=0;x<input.get(y).length();x++){
+                    if (input.get(y).charAt(x) != '@') {
+                        continue;
+                    }
+                    int nbNeighboor = 0;
+                    for (int[] dir : directions) {
+                        int dy = y + dir[0];
+                        int dx = x + dir[1];
+
+                        if (dy >= 0 && dy < input.size() && dx >= 0 && dx < input.get(dy).length()) {
+                            if (input.get(dy).charAt(dx) == '@') {
+                                nbNeighboor++;
+                            }
+                        }
+                    }
+                    if(nbNeighboor<4){
+                        answer++;
+                        hasRemove=true;
+                        //remplacer le caractère de nextinput X,y par un '.'
+                        char[] chars = nextInput.get(y).toCharArray();
+                        chars[x] = '.';
+                        nextInput.set(y, String.valueOf(chars));
+                    }
+                }
+            }
+            input = new ArrayList<>(nextInput);
+        }
+
+
+        return String.valueOf(answer);
     }
 }
