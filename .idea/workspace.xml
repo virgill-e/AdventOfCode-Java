@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2e6e16-710c-4027-8da3-b26122a28daf" name="Changes" comment="day4 part1">
+    <list default="true" id="8c2e6e16-710c-4027-8da3-b26122a28daf" name="Changes" comment="remove comm">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/virgille/exercice/Day05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/virgille/exercice/Day04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/virgille/exercice/Day04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +194,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776239408937</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="day4 part2">
+      <option name="closed" value="true" />
+      <created>1777021348356</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1777021348356</updated>
+    </task>
+    <task id="LOCAL-00010" summary="remove comm">
+      <option name="closed" value="true" />
+      <created>1777021502566</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1777021502566</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +224,9 @@
     <MESSAGE value="day3 part1" />
     <MESSAGE value="day3 part2" />
     <MESSAGE value="day4 part1" />
-    <option name="LAST_COMMIT_MESSAGE" value="day4 part1" />
+    <MESSAGE value="day4 part2" />
+    <MESSAGE value="remove comm" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove comm" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
