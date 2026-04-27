@@ -51,6 +51,39 @@ public class Day05 implements Solution {
 
     @Override
     public String part2(List<String> input) {
-        return "";
+        List<Range> ranges = new ArrayList<>();
+        for (String line : input) {
+            Matcher matcher = RANGE_PATTERN.matcher(line.trim());
+            if (matcher.matches()) {
+                long val1 = Long.parseLong(matcher.group(1));
+                long val2 = Long.parseLong(matcher.group(2));
+                ranges.add(new Range(Math.min(val1, val2), Math.max(val1, val2)));
+            }
+        }
+
+        if (ranges.isEmpty()) return "0";
+
+        ranges.sort((a, b) -> Long.compare(a.start, b.start));
+
+        List<Range> merged = new ArrayList<>();
+        Range current = ranges.get(0);
+
+        for (int i = 1; i < ranges.size(); i++) {
+            Range next = ranges.get(i);
+            if (next.start <= current.end + 1) {
+                current = new Range(current.start, Math.max(current.end, next.end));
+            } else {
+                merged.add(current);
+                current = next;
+            }
+        }
+        merged.add(current);
+
+        long answer = 0;
+        for (Range r : merged) {
+            answer += (r.end - r.start + 1);
+        }
+
+        return String.valueOf(answer);
     }
 }
